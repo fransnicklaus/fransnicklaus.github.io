@@ -8,6 +8,10 @@
     src: url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   /* font-family: Arial, Helvetica, sans-serif; */
@@ -23,6 +27,14 @@ h1 {
 
 h1 .header {
     font-size: medium;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: none;
 }
 
 .topnav {
@@ -79,4 +91,15 @@ h1 .header {
 .education {
     width: 300px;
     height:200px;
+}
+
+.container1-bg {
+    background-size:cover;
+    background-color:gray;
+}
+
+.bg-education {
+    background-color: #f2f2f2;
+    background-size:cover; 
+    background-position: center;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Frans's page</title>
   <meta charset="utf-8">
@@ -15,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <!-- <div class="topnav">
     <a class="left" style="margin-left:50px"href="#home">Home</a>
@@ -22,7 +24,7 @@
     <a class="right" href="#contact">Contact</a>
     <a class="right" href="#about">About</a>
   </div> -->
-
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top">
     <ul class="navbar-nav" style="margin-left: 2em;">
       <li class="nav-item">
@@ -31,58 +33,70 @@
     </ul>
     <ul class="navbar-nav ml-auto" style="margin-right: 2em;">
       <li class="nav-item">
-        <a class="nav-link text-light" style="font-size: 17px;" href="#">About me</a>
+        <a class="nav-link text-light" style="font-size: 17px;" href="#aboutme">About me</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light" style="font-size: 17px;" href="#">Education</a>
+        <a class="nav-link text-light" style="font-size: 17px;" href="#education">Education</a>
       </li>
       <li class="nav-item text-*right">
         <a class="nav-link text-light" style="font-size: 17px;" href="#">Accompllisment</a>
       </li>
     </ul>
-  
   </nav>
-
-  <div class="jumbotron jumbotron-fluid jumbobackground h-500">
+  <!-- Home Page -->
+  <div class="jumbotron jumbotron-fluid jumbobackground ">
     <div class="container-fluid">
       <div class="text-center" style="margin-top: 15em;">
         <h2 class="text-light">Welcome to my page!</h2>
         <h1 class="text-light">IT'S NICE TO MEET YOU</h1>
+        <a href="#aboutme" class="btn btn-secondary" style="font-size:20px" role="button">Learn More!</a>
       </div>
     </div>
   </div>
-
-  <div class="container">
+  <!-- About Me -->
+  <div class="container aboutme" style="margin-bottom:7em;padding: top 7em;" id="aboutme">
+    <div class="text-center">
+      <h1>About me!</h1>
+    </div>
     <div class="row">
       <div class="col-sm-5">
-        <img class="gambargede"src="img source/fotofrans.png" alt="">
+        <img class="gambargede" src="img source/fotofrans.png" alt="">
       </div>
       <div class="col-sm-7 text-start bg-dark text-light" style="margin-top:40px;border-radius:25px">
         <h2 style="font-size:25px;">
-          Welcome to my corner of the digital realm! I'm Frans Nicklaus Gusyanto, a passionate Information Systems student at Institut Teknologi Sepuluh Nopember. This website is not just a personal space; it's a gateway to my world, where I blend technology, sports, and a zest for coding and competitive programming. </h2>
-      </div>
-    </div>
-    <div class="container">
-      <div class="text-center" style="margin-top: 100px;">
-        <h2 style="">My Education</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 text-center">
-          <img src="img source/SD.jpeg" class="rounded education" alt="">
-          <h4>Saint Caroline Elementary School</h4>
-          <h6></h6>
-        </div>
-        <div class="col-sm-4 text-center">
-          <img src="img source/SMP.jpg" class="rounded education" alt="">
-          <h4>Saint Caroline Junior High</h4>
-          <h6></h6>
-        </div>
+          Welcome to my corner of the digital realm! I'm Frans Nicklaus Gusyanto, a passionate Information Systems
+          student at Institut Teknologi Sepuluh Nopember. This website is not just a personal space; it's a gateway to
+          my world, where I blend technology, sports, and a zest for coding and competitive programming. </h2>
       </div>
     </div>
   </div>
-</body>
-</html>
+    <!-- Education -->
+    <!-- <div class="jumbotron jumbotron-fluid bg-education"> -->
+    <div class="container-fluid bg-light" id="education">
+      <div class="text-center">
+        <h2 style="margin-bottom:2em">My Education</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 text-center">
+          <img src="img source/SD.jpeg" class="rounded education" alt="">
+          <h4><a href="#">Saint Caroline Junior High</a></h4>
+          <h6><span class="badge badge-pill badge-dark" style="font-size:15px">2010-2016</span></h6>
+        </div>
+        <div class="col-sm-4 text-center">
+          <img src="img source/SMP.jpg" class="rounded education" alt="">
+          <h4><a href="#">Saint Caroline Junior High</a></h4>
+          <h6><span class="badge badge-pill badge-dark" style="font-size:15px">2016-2019</span></h6>
+        </div>
+        <div class="col-sm-4 text-center">
+          <img src="img source/SMA.jpg" class="rounded education" alt="">
+          <h4><a href="#">Fons Vitae 1 High School</a></h4>
+          <h6><span class="badge badge-pill badge-dark" style="font-size:15px">2019-2022</span></h6>
+        </div>
+      </div>
+    </div>
+    <div class="container">
 
+    </div>
+</body>
+
+</html>
