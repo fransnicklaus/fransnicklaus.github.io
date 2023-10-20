@@ -37,42 +37,6 @@ a:hover {
     text-decoration: none;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
-
-.topnav a.left {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a.right {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
 .jumbotron {
     height:100vh
 }
@@ -102,4 +66,13 @@ a:hover {
     background-color: #f2f2f2;
     background-size:cover; 
     background-position: center;
+}
+
+.img-carousel {
+    width :75%;
+    height:75%;
+}
+
+.trans-dark {
+    background-color: rgba(97,97,105,0.8);
 }
