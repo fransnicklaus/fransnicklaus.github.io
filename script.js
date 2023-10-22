@@ -10,9 +10,10 @@
             event.preventDefault();
             event.stopPropagation();
           } else {
-            var phoneNumber = document.getElementById("phone");
-            if (isNaN(phoneNumber) || phoneNumber.value.length() < 12 || phoneNumber.value.length() > 15 ) {
-              phoneNumberInput.setCustomValidity('.');
+            var phoneNumberInput = form.querySelector('#phone');
+            var phoneNumber = phoneNumberInput.value;
+            if (!/^[0-9]+$/.test(phoneNumber)) {
+              phoneNumberInput.setCustomValidity('Please enter a valid phone number');
               event.preventDefault();
             } else {
               phoneNumberInput.setCustomValidity('');
@@ -23,11 +24,3 @@
       });
     }, false);
   })();
-
-function validate() {
-    var phone = document.getElementById("phone-num");
-    if (isNaN(phone.value)) {
-        alert("Nomor telpon harus angka");
-        return false;
-    }
-}
