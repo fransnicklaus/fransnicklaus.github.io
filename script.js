@@ -1,18 +1,18 @@
 function validate() {
 
     var nama = document.getElementById("nama");
-    var NRP = document.getElementById("phone-num");
-    var NRP = document.getElementById("message");
+    var phone = document.getElementById("phone-num");
+    var message = document.getElementById("message");
 
-    if (nama.value == ""|| phone-num.value == "" || message.value == "") {
+    if (nama.value == "" || phone.value == "" || message.value == "") {
         alert("Semua Harus diisi");
         return false;
     }
-    if (isNaN(phone-num.value)) {
+    if (isNaN(phone.value)) {
         alert("Nomor telpon harus angka");
         return false;
     }
-    if(phone-num.value <= 12 || phone-num.value >= 15) {
+    if(phone.value.length() < 12 || phone.value.length() > 15) {
         alert("Bukan nomor telpon");
         return false;
     }

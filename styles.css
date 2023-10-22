@@ -19,6 +19,7 @@ body {
 
 h2 {
     font-family: h2;
+    font-size: 40px;
 }
 
 h1 {
@@ -27,6 +28,10 @@ h1 {
 
 h1 .header {
     font-size: medium;
+}
+
+h4 {
+    font-family: h2;
 }
 
 a {
@@ -81,10 +86,6 @@ a:hover {
     background-position: center;
 }
 
-.abtme-bg {
-
-}
-
 .img-carousel {
     width :75%;
     height:75%;
@@ -96,4 +97,24 @@ a:hover {
 
 .bg-map {
     background-image: url("img source/map-image.png");
+}
+
+.contact{
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.contact-pad {
+    padding-bottom: 1em;
+}
+
+.fa-facebook-f {
+    text-decoration: none;
+}
+
+.svg-inline--fa {
+    display: var(--fa-display,inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
 }
