@@ -1,20 +1,33 @@
+
+(function () {
+    'use strict';
+  
+    window.addEventListener('load', function () {
+      var forms = document.getElementsByClassName('needs-validation');
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            var phoneNumber = document.getElementById("phone");
+            if (isNaN(phoneNumber) || phoneNumber.value.length() < 12 || phoneNumber.value.length() > 15 ) {
+              phoneNumberInput.setCustomValidity('.');
+              event.preventDefault();
+            } else {
+              phoneNumberInput.setCustomValidity('');
+            }
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+
 function validate() {
-
-    var nama = document.getElementById("nama");
     var phone = document.getElementById("phone-num");
-    var message = document.getElementById("message");
-
-    if (nama.value == "" || phone.value == "" || message.value == "") {
-        alert("Semua Harus diisi");
-        return false;
-    }
     if (isNaN(phone.value)) {
         alert("Nomor telpon harus angka");
         return false;
     }
-    if(phone.value.length() < 12 || phone.value.length() > 15) {
-        alert("Bukan nomor telpon");
-        return false;
-    }
-    return true;
 }

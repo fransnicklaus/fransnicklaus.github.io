@@ -1,13 +1,3 @@
-@font-face {
-    font-family: h2;
-    src: url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-}
-
-@font-face {
-    font-family: h1;
-    src: url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -22,16 +12,8 @@ h2 {
     font-size: 40px;
 }
 
-h1 {
-    font-family: h1;
-}
-
 h1 .header {
     font-size: medium;
-}
-
-h4 {
-    font-family: h2;
 }
 
 a {
@@ -47,15 +29,24 @@ a:hover {
     height:100vh
 }
 
+.jumbobackground {
+    background:url('img source/vecteezy_minimalist-dark-gradient-wave-background-simple-design-for_7718309.jpg'); 
+    background-size: cover; 
+    background-position: center;
+}
+
 .gambargede {
     width: auto;
     height: 300px;
 }
 
-.jumbobackground {
-    background:url('img source/vecteezy_minimalist-dark-gradient-wave-background-simple-design-for_7718309.jpg'); 
-    background-size: cover; 
-    background-position: center;
+.edu-bg {
+    background-color: #D3D3D3;
+}
+
+.education {
+    width: 300px;
+    height:200px;
 }
 
 .formbackground {
@@ -64,31 +55,6 @@ a:hover {
     background-position: center;
     height: 100vh;
     background-color: #212529;
-}
-
-.education {
-    width: 300px;
-    height:200px;
-}
-
-.edu-bg {
-    background-color: #D3D3D3;
-}
-
-.container1-bg {
-    background-size:cover;
-    background-color:gray;
-}
-
-.bg-education {
-    background-color: #f2f2f2;
-    background-size:cover; 
-    background-position: center;
-}
-
-.img-carousel {
-    width :75%;
-    height:75%;
 }
 
 .trans-dark {
@@ -106,10 +72,6 @@ a:hover {
 
 .contact-pad {
     padding-bottom: 1em;
-}
-
-.fa-facebook-f {
-    text-decoration: none;
 }
 
 .svg-inline--fa {
